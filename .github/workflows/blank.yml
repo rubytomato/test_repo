@@ -55,3 +55,9 @@ jobs:
           CURRENT_DATE: $(date +'%Y-%m-%d')
         run: |
           echo date = ${{ env.CURRENT_DATE }}
+      - name: set env
+        run: echo "::set-env name=MY_VAR::6"
+      - name: echo env
+        run: echo env= ${{ env.MY_VAR }}
+
+      
