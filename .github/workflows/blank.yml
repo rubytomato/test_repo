@@ -16,12 +16,6 @@ on:
       target:
         description: |
           'If run flow, input "run".'
-          
-          |name|description|
-          |:---|:---|
-          |A   |aaa |
-          |B   |bbb |
-
         required: true
         default: ''
       skip_test:
@@ -55,3 +49,9 @@ jobs:
         if: github.event.inputs.target == 'run'
         run: |
           echo "target ${{ github.event.inputs.target }}"
+
+      - name: current date
+        env:
+          CURRENT_DATE: $(date + '%Y-%m-%d')
+        run: |
+          echo date = ${{ env.CURRENT_DATE }}
