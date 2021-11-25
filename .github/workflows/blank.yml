@@ -14,7 +14,14 @@ on:
   workflow_dispatch:
     inputs:
       target:
-        description: 'If run flow, input "run".'
+        description: |
+          'If run flow, input "run".'
+          
+          |name|description|
+          |:---|:---|
+          |A   |aaa |
+          |B   |bbb |
+
         required: true
         default: ''
       skip_test:
