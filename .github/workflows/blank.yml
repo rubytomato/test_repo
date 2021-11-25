@@ -52,6 +52,6 @@ jobs:
 
       - name: current date
         env:
-          CURRENT_DATE: $(date + '%Y-%m-%d')
+          CURRENT_DATE: $(date +'%Y-%m-%d')
         run: |
           echo date = ${{ env.CURRENT_DATE }}
