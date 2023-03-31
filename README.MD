@@ -1,5 +1,17 @@
 # test_repo
 
+```mermaid
+sequenceDiagram
+  participant app1 as アプリケーション1
+  participant app2 as アプリケーション2
+  rect rgb(0, 0, 0)
+    Note right of app1: アプリ1
+  end
+  rect rgb(10,10,10)
+    Note right of app2: アプリ2
+  end
+```
+
 ## modify 1
 
 * list 1
