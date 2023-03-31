@@ -4,7 +4,9 @@
 sequenceDiagram
   participant app1 as アプリケーション1
   participant app2 as アプリケーション2
-  rect rgb(0, 0, 0)
+  rect rgb(100, 50, 0)
+    app1->>+app2: リクエスト
+    app2-->>-app1: レスポンス
     Note right of app1: アプリ1
   end
   rect rgb(10,10,10)
